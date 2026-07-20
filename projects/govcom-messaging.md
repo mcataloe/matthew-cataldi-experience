@@ -2,31 +2,37 @@
 
 ## Context
 
-A federal organization needed an API-driven messaging capability connecting regulated cloud infrastructure with commercial communication providers while maintaining security, reliability, tenant separation, operational visibility, and cost accountability.
+A federal organization needed an API-driven messaging capability connecting regulated AWS GovCloud infrastructure with commercial communication providers while maintaining security, reliability, tenant separation, operational visibility, and cost accountability.
+
+The verified delivery stage was test/integration. The platform did not reach production customer traffic or ATO approval during Matthew's approved scope.
 
 ## Matthew's contribution
 
-Matthew served as solution architect and a lead technical contributor.
+Matthew served as solution architect and lead technical contributor.
 
 He:
 
-- Acted as a primary technical contact for software design, cloud architecture, infrastructure planning, and delivery coordination.
-- Helped build a REST API integrating cloud messaging capabilities and vendor communication services.
-- Designed a tenant-aware product prototype covering authentication, messaging, usage visibility, cost allocation, and user preferences.
-- Designed and supported reliability patterns involving idempotency, retries, duplicate handling, ordering, visibility timeouts, dead-letter handling, poison messages, and processing guarantees.
-- Applied reconciliation and financial-correctness thinking to message segmentation, usage, billing periods, and communication-cost tracking.
-- Led technical planning for AWS GovCloud infrastructure using ECS/Fargate, Docker, Terraform, GitLab CI/CD, load balancing, and network segmentation.
-- Evaluated ARM64 and x86_64 deployment compatibility and cost tradeoffs.
-- Coordinated with vendors, engineers, networking teams, security teams, and customer stakeholders.
-- Supported authorization, inherited-control, and regulated-delivery planning.
-- Used domain boundaries and CQRS-style separation to reason about providers, API contracts, workflow state, reporting, cost attribution, compliance, and operational ownership.
+- Led REST API architecture and implementation, customer-facing API contracts, and provider integrations involving Ironbow Arrow, Twilio, WhatsApp, AWS Pinpoint, and AWS End User Messaging.
+- Implemented API endpoints/controllers, provider adapters, authentication/token workflows, message-state/status workflows, cost and segment calculations, PostgreSQL/Prisma models, Redis-backed read behavior, SQS FIFO and related queue workflows, and S3 upload behavior.
+- Led and implemented AWS GovCloud infrastructure and delivery automation across ECS/Fargate, ALB/NLB, WAF, VPC endpoints, DNS, routing/security groups, Terraform modules, GitLab pipelines, tests, load/reliability validation, deployment scripts, releases, and environment promotion.
+- Implemented a persisted asynchronous workflow state model using queued, processing, complete, and error states with failure information.
+- Implemented CQRS-style read/write separation using distinct data paths and Redis-backed read behavior without claiming formal CQRS architecture across the entire system.
+- Applied idempotency, retry semantics, duplicate handling, ordering, visibility-timeout awareness, dead-letter and poison-message handling, reconciliation, and at-least-once/exactly-once tradeoff analysis without claiming exactly-once guarantees.
+- Owned reconciliation and financial-correctness design for message segmentation, customer billing-period validation, usage, and communication-cost tracking.
+- Built and exercised ARM64 and x86_64 container variants in test/integration and retained x86_64 after security-tool compatibility concerns.
+- Evaluated EKS and rejected it as unnecessary complexity relative to ECS/Fargate; no GovCom Kubernetes implementation is claimed.
+- Provisioned AWS toll-free numbers, implemented A2P SMS testing, and directly supported 10DLC brand/campaign registration and configuration for test/integration validation.
+- Created and presented a tenant-aware Balsamiq prototype that stakeholders reviewed but did not fund or adopt.
+- Scaffolded a Next.js frontend and then led the pivot to an Express.js API-only service when requirements changed.
 
 ## Technical environment
 
-AWS GovCloud, ECS, EKS, Fargate, ECR, Docker, Terraform, GitLab CI/CD, TypeScript, JavaScript, Next.js, PostgreSQL/RDS, Redis, S3, EFS, load balancing, WAF, VPC endpoints, DNS, identity and security controls, and commercial messaging services.
+AWS GovCloud, ECS/Fargate, ECR, Docker, Terraform, GitLab CI/CD, TypeScript, JavaScript, Express.js, a limited Next.js scaffold, PostgreSQL/RDS, Prisma, Redis, SQS FIFO, S3, ALB/NLB, WAF, VPC endpoints, DNS, identity/security controls, AWS Pinpoint, AWS End User Messaging, Twilio, WhatsApp, and Ironbow Arrow.
 
 ## Evidence boundaries
 
-- Matthew was a solution architect and lead contributor, not the sole contributor to every application and infrastructure component.
-- This public description intentionally omits customer-specific network paths, account details, endpoints, credentials, and security configurations.
-- Some patterns were design and planning concerns rather than claims that every named pattern was implemented as a standalone production component.
+- Matthew led the effort while collaborating with product, business-analysis, provider, messaging, infrastructure, security, and customer stakeholders.
+- Most Dockerfile ownership and maintenance belonged to another engineer; Matthew modified Dockerfiles as needed.
+- Do not claim formal domain-driven design or verified bounded contexts; the approved scope is modular/domain-oriented TypeScript class separation.
+- Do not claim a transactional outbox, saga, blue/green deployment, canary deployment, EKS implementation, production multi-architecture deployment, production messaging traffic, ArchAngel implementation, or ATO approval.
+- This public description omits customer-specific topology, account details, endpoints, credentials, internal evidence inventories, and security configurations.
