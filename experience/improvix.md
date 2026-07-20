@@ -38,6 +38,6 @@ See [Engineering Analytics and Build-versus-Buy Evaluation](../projects/engineer
 
 ## Messaging-platform contract transition
 
-From January 2025 through Matthew's May 15, 2026 employment end date, he led architectural continuity, planning, infrastructure direction, stakeholder coordination, and delivery support for the regulated GovCom messaging platform.
+From January through May 2025, Matthew led architectural continuity, planning, infrastructure direction, stakeholder coordination, and delivery support for the regulated GovCom messaging platform during the contract transition.
 
 He preserved design context around APIs, AWS GovCloud infrastructure, provider integrations, Terraform, CI/CD, compliance, messaging reliability, reconciliation, ordering, and communication-cost correctness while supporting knowledge transfer and test/integration delivery continuity.
