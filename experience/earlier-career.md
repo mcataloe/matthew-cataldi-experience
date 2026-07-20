@@ -2,38 +2,70 @@
 
 ## IronArch Technology — Full-Stack Developer / Senior Full-Stack Developer
 
-**2020–2022**
+**August 2020–April 2022**
 
-Matthew developed and supported a federal cloud-migration platform using AngularJS, Node.js, AWS API Gateway, Lambda, SQL Server, and AWS Commercial/GovCloud services.
+Matthew worked as Full-Stack Developer from August 2020 to February 2022 and received an official promotion to Senior Full-Stack Developer from February to April 2022.
 
-He contributed to migration tracking, cloud-credit visibility, operational reporting, serverless APIs, and workflow modernization. After promotion, he interviewed engineering candidates, mentored a junior developer, and designed and documented an AWS Commercial sandbox environment to improve onboarding and lower-risk experimentation.
+Approved public scope includes:
 
-## Sysmex America — Developer / Analyst
+- Production-facing CloudKey development across migration-status workflows, cloud-credit tracking, reporting screens, API endpoints, AngularJS UI, SQL/data workflows, deployment fixes, and bug fixes.
+- Deployments performed with the lead rather than sole production-release ownership.
+- An end-to-end non-production AWS Commercial sandbox with structure-preserving database copying and obfuscation for safer onboarding and experimentation.
+- GitHub Enterprise workflow modernization that made the repository the source of truth while manual deployment remained.
+- Direct configuration of API Gateway, Lambda, CloudFormation, IAM, Secrets Manager, RDS, EC2, and S3.
+- Usage, but not currently approved direct configuration, of CloudFront, CloudTrail, and CloudWatch.
+- Evaluation of approximately 12 software-development candidates, creation of job requirements with HR/team input, and mentorship of one junior developer.
 
-**2019–2020**
+## Sysmex America, Inc. — Developer / Analyst
 
-Matthew supported migration of regulated healthcare-related and IoT-adjacent systems into AWS. His work included .NET modernization, Entity Framework, database migration planning, technical-debt analysis, operational support, incident and recovery practices, and coordination with vendors, architects, quality teams, regulatory stakeholders, and business owners.
+**February 2019–August 2020**
 
-He also researched ML.NET, ThingWorx Analytics, and augmented-reality concepts. Research and evaluation should not be interpreted as production ownership of machine-learning systems.
+The current approved public scope is XW100-specific.
+
+Matthew supported and implemented:
+
+- XW100 production readiness, incident analysis, RCA/postmortems, on-call responsibility, runbooks, DR testing, operational support, and the actual migration.
+- Planning, production code, prototypes, and migration strategy for movement from .NET Framework APIs toward .NET Core WebAPI and Entity Framework.
+- Schema extraction, SQL objects, stored procedures, Entity Framework models, migration/fallback/batch scripts, validation, database mirroring/replication, and isolated database-copy behavior.
+- Migration planning, execution steps, rollback/fallback planning, post-migration validation, and QA/regulatory coordination.
+
+AWS work was requirements and coordination oriented; vendor/platform teams provisioned AWS resources, and no direct AWS configuration claim is made. ML.NET, ThingWorx Analytics, and Vuforia were research only. Non-XW100 Sysmex material is omitted until separately approved.
 
 ## APICS / ASCM — .NET Developer
 
-**2018–2019**
+**February 2018–January 2019**
 
-Matthew developed enterprise membership and reporting capabilities using React, Vue, ASP.NET MVC, Entity Framework, Razor, C#, VB.NET, T-SQL, SSRS, and SSIS. He also taught modernization concepts to developers transitioning from ASP.NET WebForms to MVC and Entity Framework.
+Matthew worked primarily as an individual-contributor/service-desk developer.
 
-## Associated Global Systems — Junior .NET Developer
+Approved public scope includes:
 
-**2017**
+- Direct implementation with ASP.NET WebForms, VB.NET, C#, T-SQL, stored procedures, SSRS, and SSIS.
+- Some production reporting, query, stored-procedure, and import-package work.
+- SQL/report tuning, data-cleanup proposals, production troubleshooting, and product/business stakeholder collaboration.
+- React portal planning, initial scaffolding, and component work that did not reach production.
+- A lunch-and-learn and peer coaching on benefits of moving away from WebForms; this was not a formal training program or completed migration.
+- Microsoft 70-461, Querying Microsoft SQL Server, and the resulting Microsoft Certified Professional credential path.
 
-Matthew supported legacy application modernization involving C#, DB2, IBM AS/400 systems, SQL optimization, SAP forms, and usability improvements. A redesigned form reduced upload time by approximately 35 percent.
+Direct implementation with ASP.NET MVC, Entity Framework, Razor, or Vue is not currently approved for this role and is not published here.
 
 ## Rockford Symphony Orchestra — Personnel Manager / Software Developer
 
-**2013–2018**
+**March 2013–April 2018**
 
-Matthew held formal responsibility for musician personnel operations across a roster of more than 1,200 musicians while independently designing, developing, and operating an internal business platform.
+Matthew held formal non-IT personnel-management responsibility across booking, scheduling, roster coordination, attendance, contracts, payroll support, tax-preparation support, hiring/replacement, and personnel decision support for a roster exceeding 1,200 musicians. The roster size is not a direct-report count.
 
-The platform supported recurring workflows involving scheduling, attendance, contracts, payroll support, mileage, auditions, seasons, venues, reporting, permissions, and third-party productivity tools. This work combined direct people operations, domain modeling, workflow automation, integration, financial correctness, reconciliation, and long-term product ownership.
+He independently designed, developed, and maintained an internal operational platform supporting the organization's personnel workflows at the currently approved source-stated depth. This work may support socio-technical systems, workflow, payroll/contract sensitivity, and internal-platform positioning, but it is not software-engineering management evidence.
 
-See [Personnel Operations Platform](../projects/personnel-operations-platform.md).
+Deeper technical architecture for the Rockford platform remains outside the current approved public scope.
+
+## Independent Event-Based String Ensemble Business
+
+**1998–Present**
+
+Matthew owns and operates an event-based ensemble business involving musician selection, contracting, availability, scheduling, staffing, client coordination, and performance delivery.
+
+This is non-IT contractor/event-operations leadership. It should not be interpreted as corporate HR authority, formal performance-management authority, full-time employee management, or software-engineering management.
+
+## Withheld provisional role
+
+Associated Global Systems is not published in this repository because the current public target forbids provisional claims and that role has not completed the required Source of Truth review.
