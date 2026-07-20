@@ -40,7 +40,7 @@ Supported Department of State modernization initiatives across enterprise integr
 - Redirected the initiative away from heavily customized low-code approaches after identifying scalability, extensibility, firewall, maintainability, and operational-ownership concerns.
 - Led a build-versus-buy evaluation across engineering-intelligence platforms, including direct evaluation of Jellyfish, DX, and Oobeya, without claiming purchase, pilot, or implementation of an evaluated product.
 
-**SE-ECCS / GovCom Contract Transition | January 2025 - May 15, 2026**
+**SE-ECCS / GovCom Contract Transition | January 2025 - May 2025**
 
 - Led continuity, planning, architecture, and delivery coordination during the contract transition for a regulated AWS GovCloud messaging platform.
 - Preserved API, infrastructure, provider-integration, reliability, reconciliation, ordering, and billing/cost-correctness direction established during the preceding Acuity engagement.
@@ -172,4 +172,4 @@ Supported Department of State programs involving AWS GovCloud, multi-cloud conne
 
 ---
 
-This document is a comprehensive public career publication based on currently approved records. It is not a substitute for a targeted application resume, interview, reference check, background check, or credential verification. Associated Global Systems, non-XW100 Sysmex material, and deeper Rockford technical-platform details are omitted because the current public publication policy does not allow provisional claims.
+This document is a comprehensive public career publication based on currently approved records. It is not a substitute for a targeted application resume, interview, reference check, background check, or credential verification.
