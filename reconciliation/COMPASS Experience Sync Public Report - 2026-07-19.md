@@ -7,7 +7,9 @@
 - Source identifier: `compass-career-source`
 - Source revision inspected: `aa84526abb7a204615b8c0526515c25fe190c463`
 - Target base revision: `222d060b2e13b54a33af6627a7d78a42ee20235f`
-- Framework version used for reconciliation: `vNext 2026-07.4`
+- Target content revision before final manifest update: `55dcc3d55812928c6c0c3ae5e0e98a6a675fa5d9`
+- Framework proposal revision: `02a2bc939668bdef124485bd8ca502e66e093d7b`
+- Framework version: `vNext 2026-07.5`
 - Writes: review branch only
 - Default branch writes: none
 - Pull request merge: not authorized
@@ -26,7 +28,7 @@ The audit found material drift between the existing projection and the current a
 8. Sysmex wording generalized beyond the currently approved XW100 scope and implied broader AWS implementation than supported.
 9. Rockford platform wording exposed deeper technical claims that have not completed separate review.
 10. Public profile wording used `fully remote`, while the current career policy is remote-first.
-11. The structured claims index predated the July 2026 dossier and control-ledger reconciliation.
+11. The structured claims index and several capability pages predated the July 2026 dossier and control-ledger reconciliation.
 
 ## Publication decisions
 
@@ -45,12 +47,13 @@ The audit found material drift between the existing projection and the current a
 - GovCom test/integration, EKS-evaluation, provider, A2P/toll-free/10DLC, and pattern boundaries.
 - Equinix non-production, shared-implementation, IPsec/MACsec, governance-proposal, and large-data-transfer boundaries.
 - GitLab singleton/HA lifecycle and EKS advisory boundaries.
+- DIN proof-of-concept/test scope and non-adoption boundaries.
 - VerifyForGood local-prototype, partial implementation, and design/roadmap separation.
 - IronArch production/shared-release, sandbox, GitHub Enterprise, AWS-service, candidate-evaluation, and mentorship boundaries.
 - Sysmex XW100-specific production, migration, database, AWS-coordination, and regulatory/QA boundaries.
 - APICS direct implementation and non-production React boundaries.
 - Rockford personnel-management, roster, software-management, and deeper-platform-review boundaries.
-- Platform-engineering and AI/data capability pages.
+- Cloud architecture, platform engineering, distributed systems, technical leadership, and AI/data capability pages.
 - Structured public claims and withheld-scope records.
 
 ### Removed or withheld
@@ -81,11 +84,20 @@ The audit found material drift between the existing projection and the current a
 - Provisional claims checked against the target's `allow_provisional_claims: false` policy.
 - Relative repository links reviewed at the authored path level.
 - No protected target paths were configured.
+- Generated CV was kept separate from the Source of Truth and from internal coverage and reconciliation notes.
+- Targeted resumes remain identified as the default application artifact.
 
-## Known limitation
+## Cross-pull-request dependency
 
-The repository is still private at the time of this report. The content is prepared for public sharing, but changing repository visibility was not part of the available write actions in this run and has not been claimed as completed.
+The public projection depends on the source-side date correction and comprehensive-CV policy proposed from source revision `aa84526abb7a204615b8c0526515c25fe190c463` and the COMPASS `vNext 2026-07.5` workflow proposed from framework revision `02a2bc939668bdef124485bd8ca502e66e093d7b`.
+
+The three pull requests should be reviewed as one coordinated change set. Merge order should be framework, Source of Truth, then public projection unless the reviewer deliberately chooses another order and confirms the dependency remains valid.
+
+## Known limitations
+
+- The repository is still private at the time of this report. The content is prepared for public sharing, but changing repository visibility was not part of the available write actions in this run and has not been claimed as completed.
+- A final recruiter-facing DOCX was not released. The current private executable resume contract and exact approved template access do not yet support a `Comprehensive Career CV` DOCX filename and section contract, so release remains blocked rather than bypassed.
 
 ## Next safe action
 
-Review the draft pull request. Merge only after explicit human review and instruction. After merge, separately change repository visibility when the publication decision is final.
+Review the coordinated draft pull requests. Merge only after explicit human review and instruction. After merge, separately change repository visibility when the publication decision is final and update the executable private release contract before producing a final comprehensive-CV DOCX.
