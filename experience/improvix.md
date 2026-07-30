@@ -2,42 +2,42 @@
 
 ## Senior Technical Consultant
 
-**2025–2026 | Remote**
+**January 2025–May 15, 2026 | Remote**
 
-Matthew supported federal modernization initiatives spanning cloud-native applications, enterprise integrations, engineering analytics, AI-assisted workflows, and compliance-aligned delivery.
+Matthew supported Department of State modernization initiatives spanning cloud-native applications, enterprise integrations, engineering analytics, AI-assisted workflow design, and compliance-aligned delivery. His final day with Improvix was May 15, 2026; none of the work below should be interpreted as current employment after that date.
 
 ## AI-assisted enterprise intake platform
 
-Matthew served as a senior technical contributor on an enterprise intake and modernization platform intended to consolidate solution workflows, reduce duplication, improve cost visibility, and support more consistent technical decision-making.
+Matthew served as a senior technical contributor on an enterprise intake and modernization platform.
 
 Documented contributions included:
 
-- Helping shape platform architecture and modernization strategy.
-- Contributing to implementation using FastAPI, React/Vite, PostgreSQL, DynamoDB, and AWS.
-- Guiding API contracts, data modeling, migration patterns, and integration boundaries.
-- Designing and implementing major integration paths across enterprise systems.
-- Applying reliability-oriented patterns involving idempotency, retry behavior, duplicate handling, ordering, reconciliation, and long-running workflow concerns.
-- Leading an environment and branching strategy for cloud-coupled development.
-- Supporting security-conscious identity, logging, performance, observability, and operational-readiness practices.
-- Translating stakeholder needs into architecture and delivery decisions.
+- Implementing functionality in an existing FastAPI, React/Vite, PostgreSQL, DynamoDB, and AWS stack.
+- Owning API contracts, data models, ingestion patterns, migration strategy, and integration boundaries for assigned workstreams.
+- Leading and implementing major integration paths across Microsoft 365 / Power Platform, Jira, GitLab, and ServiceNow.
+- Proposing an AWS SQS-based integration approach that became a reusable pattern and implementing the Jira and ServiceNow paths after the lead engineer established the general implementation.
+- Applying idempotency, retry, duplicate-handling, ordering, visibility-timeout, logging, correlation, environment-promotion, and load-testing considerations.
+- Preserving the boundary that Matthew did not create or select the original foundational stack, own the platform's Okta integration, or claim exactly-once guarantees.
 
 See [AI-Assisted Enterprise Intake Platform](../projects/intake-platform.md).
 
 ## Engineering analytics platform
 
-Matthew was the technical lead and primary architectural driver during the early phase of an engineering analytics initiative aggregating delivery and operational signals across enterprise tooling.
+Matthew was the technical lead and primary architectural driver during an engineering analytics initiative aggregating delivery and operational signals across enterprise tooling.
 
 Documented contributions included:
 
-- Establishing early architecture and backend direction.
+- Establishing architecture, ingestion, normalization, reporting, and backend direction.
 - Building an Express.js API layer.
-- Defining ingestion, normalization, and reporting patterns.
-- Conducting build-versus-buy analysis across internal and commercial approaches.
-- Evaluating DevEx, DORA, metadata boundaries, security posture, data handling, operational ownership, and adoption risk.
-- Producing executive-level comparisons and phased adoption recommendations.
+- Redirecting the initiative away from heavily customized low-code approaches after identifying scalability, firewall, extensibility, maintainability, and operational-ownership risks.
+- Leading build-versus-buy analysis across internal and commercial approaches, including direct evaluation of Jellyfish, DX, and Oobeya.
+- Evaluating DevEx/DORA concepts, metadata boundaries, AI usage, outbound telemetry, SaaS retention, security posture, operational ownership, and adoption risk.
+- Preserving that funding reductions stopped procurement and no evaluated product was purchased, piloted, or implemented.
 
 See [Engineering Analytics and Build-versus-Buy Evaluation](../projects/engineering-analytics.md).
 
 ## Messaging-platform contract transition
 
-Matthew supported architectural continuity during the transition of a regulated cloud messaging platform. He preserved design context around APIs, cloud infrastructure, CI/CD, compliance, messaging reliability, reconciliation, and cost correctness while supporting knowledge transfer and delivery continuity.
+From January through May 2025, Matthew led architectural continuity, planning, infrastructure direction, stakeholder coordination, and delivery support for the regulated GovCom messaging platform during the contract transition.
+
+He preserved design context around APIs, AWS GovCloud infrastructure, provider integrations, Terraform, CI/CD, compliance, messaging reliability, reconciliation, ordering, and communication-cost correctness while supporting knowledge transfer and test/integration delivery continuity.

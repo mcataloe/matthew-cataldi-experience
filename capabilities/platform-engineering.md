@@ -4,35 +4,48 @@
 
 ### GitLab and enterprise engineering tooling
 
-Matthew initially led a self-managed GitLab high-availability modernization effort, designed an architecture sized for approximately 3,000 users, established Terraform repositories, led Okta integration, assisted with EKS runners, and contributed to readiness, recovery, capacity, and operational-ownership planning.
+Matthew led substantial technical and evidence work for a production singleton GitLab authorization, which received its ATO during that scope. He also led initial architecture and approximately 3,000-user sizing for a later HA successor, established early Terraform structure, transitioned implementation leadership, and remained periodically involved.
+
+The later HA production deployment, validation, DR testing, operations, and separate authorization occurred under another owner after Matthew left the team. Matthew's Jira-to-EKS and later GitLab EKS runner contributions were research and advisory work rather than implementation or operations.
 
 Source: [GitLab and Engineering Platform Modernization](../projects/gitlab-platform-modernization.md)
 
 ### Engineering analytics platform
 
-Matthew led early architecture for a platform aggregating engineering metadata across delivery tools and conducted a build-versus-buy evaluation spanning extensibility, security, data boundaries, operational ownership, adoption, cost, and long-term maintainability.
+Matthew led architecture, ingestion, normalization, reporting, backend direction, and build-versus-buy evaluation for an engineering-intelligence initiative spanning extensibility, security, data boundaries, operational ownership, adoption, cost, and maintainability.
+
+No complete mature production platform or implemented commercial product is claimed.
 
 Source: [Engineering Analytics](../projects/engineering-analytics.md)
 
-### Independent multi-tenant platform architecture
+### VerifyForGood local product platform
 
-Matthew designed the API, tenant, identity, data, ingestion, billing, and AI-assistance foundations for VerifyForGood.
+Matthew owns and implements a working local multi-tenant product prototype with APIs, data models, tenant controls, IRS ingestion, and customer/admin portals.
+
+AWS deployment, working AI/RAG, completed billing, CI/CD, monitoring, and production operations remain outside the implemented scope.
 
 Source: [VerifyForGood Platform Architecture](../projects/verify-for-good-platform.md)
 
-### Long-term internal platform ownership
+### Cloud and developer enablement
 
-Matthew independently built and operated a business-critical internal personnel platform while owning the operational domain it supported.
+Supporting direct evidence includes:
 
-Source: [Personnel Operations Platform](../projects/personnel-operations-platform.md)
-
-## Supporting evidence
-
-- Terraform-supported provisioning for hybrid-cloud connectivity.
-- Cloud-coupled environment and branching strategy for an enterprise application.
-- ECS/Fargate and GitLab CI/CD architecture for regulated messaging.
-- Developer onboarding, documentation, sandbox environments, and workflow modernization.
+- Terraform-supported provisioning for non-production hybrid-cloud connectivity.
+- ECS/Fargate and GitLab CI/CD implementation for a test/integration regulated messaging platform.
+- Cloud9 implementation and adoption within SE-Tools.
+- A HashiCorp Packer proof of concept.
+- AWS Commercial sandbox design and implementation for safer onboarding.
+- GitHub Enterprise workflow modernization that retained manual deployment.
+- Documentation, installation guidance, architecture maps, and knowledge transfer.
 
 ## Boundaries
 
-Matthew has meaningful platform architecture and modernization experience, but the evidence varies by platform. Some efforts were fully owned internal products; others were initial leadership, architecture, implementation, evaluation, or shared enterprise modernization.
+Matthew has meaningful platform architecture, implementation, authorization, modernization, and enablement experience, but depth varies by platform.
+
+Do not collapse:
+
+- singleton and HA GitLab lifecycle ownership;
+- architecture/advisory EKS work into implementation;
+- proof-of-concept or test systems into production;
+- local product implementation into deployed SaaS operations;
+- source-control modernization into full CI/CD.

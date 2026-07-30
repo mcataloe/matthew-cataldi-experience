@@ -1,234 +1,247 @@
 schema_version: 1
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-19
+source_status: compass-reconciled
+publication_policy:
+  audience: public
+  allow_provisional_claims: false
+  exclude_direct_pii: true
+  preserve_contribution_depth: true
+  preserve_delivery_stage: true
+
 claims:
+  - id: career-13-plus-years
+    claim: Matthew has 13+ years of overlap-safe professional experience.
+    evidence_level: direct
+    contribution_level: career-timeline
+    sources: [PROFILE.md, career-cv/Matthew Cataldi - General - Comprehensive Career History - 07-2026 - Comprehensive Career CV.md]
+    limitations:
+      - Duration uses the union of employment intervals so overlapping roles count once.
+    public_status: approved
+
   - id: staff-cross-domain-architecture
     claim: Operates across software engineering, cloud infrastructure, enterprise integration, data systems, delivery governance, and stakeholder alignment.
     evidence_level: direct
     contribution_level: recurring-role-pattern
-    sources:
-      - PROFILE.md
-      - capabilities/technical-leadership.md
-    tags: [staff-engineering, architecture, systems-thinking, stakeholder-alignment]
+    sources: [PROFILE.md, capabilities/technical-leadership.md]
     limitations:
-      - Scope and authority vary by project and should be interpreted from the project-specific source.
+      - Authority and implementation depth vary by project and must be interpreted from project-specific pages.
+    public_status: approved
+
+  - id: improvix-employment-end-date
+    claim: Worked at Improvix Technologies as Senior Technical Consultant from January 2025 through May 15, 2026.
+    evidence_level: direct
+    contribution_level: employment-history
+    sources: [experience/improvix.md]
+    limitations:
+      - Do not describe the role or Intake@State engagement as current after May 15, 2026.
     public_status: approved
 
   - id: intake-platform-architecture-implementation
-    claim: Contributed materially to architecture and implementation of an AI-assisted enterprise intake platform using FastAPI, React, PostgreSQL, DynamoDB, and AWS.
+    claim: Implemented material functionality and owned assigned API, data, ingestion, migration, and integration boundaries for an enterprise intake platform using FastAPI, React/Vite, PostgreSQL, DynamoDB, and AWS.
     evidence_level: direct
     contribution_level: senior-technical-contributor
-    sources:
-      - projects/intake-platform.md
-    tags: [fastapi, react, postgresql, dynamodb, aws, ai-assisted-systems]
+    sources: [experience/improvix.md, projects/intake-platform.md]
     limitations:
-      - Do not represent Matthew as the sole owner of the complete platform.
-      - Planned or discussed architecture patterns are not automatically standalone production implementations.
-    public_status: approved
-
-  - id: intake-enterprise-integrations
-    claim: Designed and implemented major enterprise-integration paths and helped define reliable workflow boundaries for an enterprise intake platform.
-    evidence_level: direct
-    contribution_level: design-and-implementation
-    sources:
-      - projects/intake-platform.md
-    tags: [enterprise-integration, api-design, workflow-reliability, idempotency]
-    limitations:
-      - Customer-specific endpoints and environment details are intentionally omitted.
+      - Did not create or select the original foundational stack or own the complete platform.
+      - Does not claim exactly-once guarantees or ownership of the platform's Okta integration.
     public_status: approved
 
   - id: engineering-analytics-technical-lead
-    claim: Led early architecture and technical direction for an engineering analytics platform aggregating metadata across enterprise delivery systems.
+    claim: Served as technical lead and primary architectural driver for an engineering analytics initiative aggregating metadata across enterprise delivery systems.
     evidence_level: direct
-    contribution_level: early-technical-lead
-    sources:
-      - projects/engineering-analytics.md
-    tags: [engineering-analytics, devex, dora, expressjs, metadata]
+    contribution_level: technical-lead
+    sources: [experience/improvix.md, projects/engineering-analytics.md]
     limitations:
-      - Does not claim delivery of a complete mature enterprise platform into production.
+      - No complete mature production platform or purchased commercial product is claimed.
     public_status: approved
 
   - id: engineering-analytics-build-vs-buy
-    claim: Conducted build-versus-buy analysis covering cost, integration, data handling, security, operational ownership, maintainability, and adoption.
+    claim: Led build-versus-buy evaluation across internal and commercial engineering-intelligence approaches, including direct evaluation of Jellyfish, DX, and Oobeya.
     evidence_level: direct
     contribution_level: lead-evaluator
-    sources:
-      - projects/engineering-analytics.md
-    tags: [build-vs-buy, vendor-evaluation, security, maintainability]
+    sources: [experience/improvix.md, projects/engineering-analytics.md]
     limitations:
-      - Vendor evaluation does not imply implementation ownership of evaluated products.
+      - Funding reductions stopped procurement; no evaluated product was purchased, piloted, or implemented.
     public_status: approved
 
   - id: govcom-solution-architecture
-    claim: Served as solution architect and lead technical contributor for a regulated API-driven cloud messaging platform.
+    claim: Served as solution architect and lead technical contributor for a regulated API-driven AWS GovCloud messaging platform implemented and validated in test/integration environments.
     evidence_level: direct
     contribution_level: solution-architect-and-lead-contributor
-    sources:
-      - projects/govcom-messaging.md
-    tags: [aws-govcloud, api-architecture, messaging, terraform, ecs, fargate]
+    sources: [experience/acuity.md, projects/govcom-messaging.md]
     limitations:
-      - Do not infer sole ownership of every application and infrastructure component.
+      - No production customer traffic or ATO approval is claimed.
+      - Does not imply sole ownership of every application or infrastructure component.
     public_status: approved
 
   - id: govcom-reliability-patterns
-    claim: Applied messaging reliability concepts including idempotency, retries, duplicate handling, ordering, dead-letter handling, reconciliation, and processing-guarantee tradeoffs.
+    claim: Applied idempotency, retries, duplicate handling, ordering, dead-letter and poison-message handling, reconciliation, persisted asynchronous state, and processing-guarantee tradeoff analysis.
     evidence_level: direct
-    contribution_level: architecture-and-design
-    sources:
-      - projects/govcom-messaging.md
-      - capabilities/distributed-systems.md
-    tags: [distributed-systems, idempotency, retries, reconciliation, ordering]
+    contribution_level: architecture-and-implementation
+    sources: [projects/govcom-messaging.md, capabilities/distributed-systems.md]
     limitations:
-      - Individual patterns should be discussed in the context of the concrete workflow and implementation maturity.
+      - Does not claim exactly-once guarantees, transactional outbox, saga, or standalone implementation of every named pattern.
     public_status: approved
 
-  - id: govcom-financial-correctness
-    claim: Applied reconciliation and financial-correctness thinking to message segmentation, usage tracking, billing periods, and communication costs.
+  - id: govcom-messaging-registration
+    claim: Provisioned AWS toll-free numbers, implemented A2P SMS testing, and supported 10DLC brand/campaign registration and configuration for test/integration validation.
     evidence_level: direct
-    contribution_level: architecture-and-domain-modeling
-    sources:
-      - projects/govcom-messaging.md
-    tags: [financial-correctness, reconciliation, usage-metering, billing]
+    contribution_level: implementation-and-configuration
+    sources: [projects/govcom-messaging.md]
     limitations:
-      - Does not imply responsibility for enterprise accounting systems.
+      - Test/integration scope only.
     public_status: approved
 
   - id: hybrid-cloud-technical-product-owner
-    claim: Served as Technical Product Owner and engineering lead for hybrid-cloud interconnection work spanning AWS, Azure, GCP, and Equinix.
+    claim: Served as Technical Product Owner and engineering lead for non-production interconnection across AWS, Azure, GCP, and Equinix.
     evidence_level: direct
     contribution_level: technical-product-owner-and-engineering-lead
-    sources:
-      - projects/equinix-modernization.md
-    tags: [hybrid-cloud, aws, azure, gcp, equinix, networking]
+    sources: [experience/acuity.md, projects/equinix-modernization.md]
     limitations:
-      - Role combined architecture coordination, governance, and enablement; it was not solely hands-on network administration.
+      - Role combined architecture, coordination, governance, and implementation; it was not solely hands-on network administration.
+      - No live Online Passport Renewal traffic is claimed.
     public_status: approved
 
   - id: hybrid-cloud-terraform-enablement
-    claim: Created a GitLab repository template enabling Terraform-supported provisioning for cloud-interconnection resources.
+    claim: Established the broad Terraform structure, sequenced implementation through onboarding, and later completed remaining reusable modules for approved cloud-interconnection scopes.
     evidence_level: direct
-    contribution_level: implementation-and-enablement
-    sources:
-      - projects/equinix-modernization.md
-    tags: [terraform, gitlab, infrastructure-as-code, cloud-networking]
-    limitations: []
+    contribution_level: architecture-and-shared-implementation
+    sources: [projects/equinix-modernization.md]
+    limitations:
+      - Terraform and component ownership were shared; Matthew did not solely implement every module.
+    public_status: approved
+
+  - id: gitlab-singleton-ato
+    claim: Led substantial technical and evidence work for the production singleton GitLab authorization, which received its ATO while he led that scope.
+    evidence_level: direct
+    contribution_level: technical-and-evidence-lead
+    sources: [experience/acuity.md, projects/gitlab-platform-modernization.md]
+    limitations:
+      - Did not unilaterally grant the authorization.
+      - Do not conflate the singleton authorization with the later HA authorization.
     public_status: approved
 
   - id: gitlab-ha-initial-lead
-    claim: Initially led a self-managed GitLab high-availability modernization and associated authorization effort for an architecture sized for approximately 3,000 users.
+    claim: Led initial architecture and approximately 3,000-user sizing direction for a later self-managed GitLab HA environment and established early Terraform structure.
     evidence_level: direct
     contribution_level: initial-lead
-    sources:
-      - projects/gitlab-platform-modernization.md
-    tags: [gitlab, high-availability, platform-engineering, aws]
+    sources: [projects/gitlab-platform-modernization.md]
     limitations:
-      - Leadership later transitioned to another engineer.
-      - The complete platform was not fully productionized under Matthew's sole ownership.
+      - Later implementation, production deployment, validation, DR testing, operations, and separate authorization occurred under another owner after Matthew left the team.
     public_status: approved
 
-  - id: gitlab-terraform-okta
-    claim: Established Terraform repositories supporting the GitLab modernization and led work to integrate GitLab with Okta-based SSO.
+  - id: gitlab-eks-advisory
+    claim: Led initial Jira-to-EKS research and provided architecture/governance advice on a later GitLab EKS runner sandbox.
     evidence_level: direct
-    contribution_level: lead-and-implementation-support
-    sources:
-      - projects/gitlab-platform-modernization.md
-    tags: [gitlab, terraform, okta, sso, identity]
+    contribution_level: research-and-advisory
+    sources: [projects/gitlab-platform-modernization.md]
+    limitations:
+      - Did not implement or operate Jira on EKS or the later GitLab EKS runner infrastructure.
+    public_status: approved
+
+  - id: din-proof-of-concept
+    claim: Served as lead engineer and senior individual contributor for proof-of-concept/test modernization work across AWS, Azure, GCP, Terraform, Equinix, hybrid connectivity, and Stratozone.
+    evidence_level: direct
+    contribution_level: lead-engineer-and-implementer
+    sources: [experience/acuity.md, projects/din-modernization.md]
+    limitations:
+      - No production deployment, actual isolated-network connection, adoption, funding, completed migration, or customer technical approval is claimed.
+    public_status: approved
+
+  - id: verifyforgood-local-prototype
+    claim: Owns and implements a working local nonprofit-intelligence prototype with APIs, data models, tenant controls, IRS ingestion, and customer/admin portals.
+    evidence_level: direct
+    contribution_level: founder-and-staff-software-engineer
+    sources: [experience/verify-for-good.md, projects/verify-for-good-platform.md]
+    limitations:
+      - No AWS deployment, production environment, public application, external customers, revenue, or production users.
+      - Billing is partial and AI/RAG, explainability, vector/graph capabilities, CI/CD, monitoring, and operational tooling remain design or roadmap work.
+    public_status: approved
+
+  - id: verifyforgood-human-code-boundary
+    claim: Is the sole human software/code contributor for the current VerifyForGood product scope, excluding AI tools.
+    evidence_level: direct
+    contribution_level: implementation-owner
+    sources: [projects/verify-for-good-platform.md]
+    limitations:
+      - Domain requirements and internal pilot feedback include material advisor contribution.
+      - AI-assisted implementation is attributed only where Matthew reviewed, tested, modified as needed, and accepted it.
+    public_status: approved
+
+  - id: ironarch-official-promotion
+    claim: Worked at IronArch Technology as Full-Stack Developer and received an official promotion to Senior Full-Stack Developer in February 2022.
+    evidence_level: direct
+    contribution_level: employment-history
+    sources: [experience/earlier-career.md]
     limitations: []
     public_status: approved
 
-  - id: gitlab-eks-runners
-    claim: Assisted with EKS-based runner setup for GitLab.
+  - id: ironarch-cloudkey-implementation
+    claim: Developed and supported production-facing CloudKey workflows and built a non-production AWS Commercial sandbox with database copying and obfuscation.
     evidence_level: direct
-    contribution_level: supporting-contributor
-    sources:
-      - projects/gitlab-platform-modernization.md
-    tags: [gitlab-runners, eks, kubernetes]
+    contribution_level: full-stack-implementation-and-sandbox-owner
+    sources: [experience/earlier-career.md]
     limitations:
-      - Do not represent this as sole ownership of a mature enterprise runner platform.
-      - Enterprise chargeback and ownership remained a material blocker.
+      - Production deployments were performed with the lead.
+      - Sandbox was non-production.
     public_status: approved
 
-  - id: verify-for-good-platform-architecture
-    claim: Designed and is building a multi-tenant nonprofit intelligence platform spanning APIs, identity, data ingestion, cloud architecture, billing, and explainable AI assistance.
+  - id: ironarch-github-enterprise
+    claim: Migrated a manual file-coordination process to GitHub Enterprise as the source of truth.
     evidence_level: direct
-    contribution_level: founder-and-platform-architect
-    sources:
-      - projects/verify-for-good-platform.md
-    tags: [multi-tenant-saas, api-platform, aws, data-ingestion, explainable-ai]
+    contribution_level: workflow-modernization-owner
+    sources: [experience/earlier-career.md]
     limitations:
-      - Distinguish implemented features, active work, architectural designs, and roadmap items.
+      - Manual deployment remained; this was not complete CI/CD automation.
     public_status: approved
 
-  - id: verify-for-good-public-data-ingestion
-    claim: Designed ingestion safeguards involving deterministic discovery, manifests, HTTP metadata, archive processing, malformed-data handling, schema drift, and incremental reprocessing.
+  - id: sysmex-xw100-modernization
+    claim: Held XW100-specific production, migration, database, rollback, operational, and QA/regulatory-coordination responsibilities while modernizing .NET APIs and data workflows.
     evidence_level: direct
-    contribution_level: architecture-and-design
-    sources:
-      - projects/verify-for-good-platform.md
-    tags: [data-ingestion, xml, manifests, schema-drift, reprocessing]
+    contribution_level: developer-analyst-and-production-operator
+    sources: [experience/earlier-career.md]
     limitations:
-      - Production scale should not be inferred beyond documented implementation state.
+      - Do not generalize XW100 responsibility to all Sysmex analyzers.
+      - No direct AWS configuration or final regulatory/QA approval authority is claimed.
+      - Non-XW100 Sysmex material is withheld.
     public_status: approved
 
-  - id: personnel-platform-ownership
-    claim: Independently designed, developed, operated, and evolved an internal personnel-operations platform supporting a roster of more than 1,200 musicians.
+  - id: apics-implementation
+    claim: Worked as an individual-contributor/service-desk developer using ASP.NET WebForms, VB.NET, C#, T-SQL, stored procedures, SSRS, and SSIS, with some production reporting and database support.
     evidence_level: direct
-    contribution_level: full-product-and-domain-owner
-    sources:
-      - projects/personnel-operations-platform.md
-    tags: [internal-platform, workflow-automation, domain-modeling, product-ownership]
+    contribution_level: implementation-and-support
+    sources: [experience/earlier-career.md]
     limitations:
-      - The platform was an internal business system rather than a public commercial SaaS product.
+      - React work was planning/scaffolding/components only and did not reach production.
+      - Direct MVC, Entity Framework, Razor, and Vue implementation is not currently published for this role.
     public_status: approved
 
-  - id: personnel-financial-correctness
-    claim: Applied reconciliation, proration, correction, duplicate-prevention, and immutable-record awareness to payroll-sensitive personnel workflows.
+  - id: rockford-personnel-management
+    claim: Held formal non-IT personnel-management responsibility and maintained an internal operational platform supporting a roster exceeding 1,200 musicians.
     evidence_level: direct
-    contribution_level: domain-owner-and-implementer
-    sources:
-      - projects/personnel-operations-platform.md
-    tags: [reconciliation, payroll-workflows, idempotency, financial-correctness]
+    contribution_level: personnel-manager-and-internal-platform-owner
+    sources: [experience/earlier-career.md, projects/personnel-operations-platform.md]
     limitations:
-      - Payroll-support responsibility does not imply serving as accountant or payroll provider.
+      - The roster was not a direct-report count.
+      - This is not software-engineering management evidence.
+      - Deeper technical architecture is withheld pending separate review.
     public_status: approved
 
-  - id: ironarch-cloud-migration-platform
-    claim: Developed and supported a federal cloud-migration platform using AngularJS, Node.js, AWS serverless services, and SQL Server.
+  - id: public-credentials
+    claim: Publicly approved credentials include an active Top Secret clearance with no SCI current through February 2029, two active AWS Associate certifications, ITIL Foundation v4, and the Microsoft 70-461/MCP credential path.
     evidence_level: direct
-    contribution_level: full-stack-developer
-    sources:
-      - experience/earlier-career.md
-    tags: [angularjs, nodejs, aws, lambda, api-gateway, sql-server]
+    contribution_level: credentials
+    sources: [PROFILE.md, career-cv/Matthew Cataldi - General - Comprehensive Career History - 07-2026 - Comprehensive Career CV.md]
     limitations:
-      - Specific feature ownership should be established in interview discussion.
+      - Do not claim TS/SCI.
+      - Do not imply Microsoft certification remains currently active.
+      - AWS exact expiration dates are not published.
     public_status: approved
 
-  - id: ironarch-mentoring-and-sandbox
-    claim: Interviewed engineering candidates, mentored a junior developer, and designed an AWS Commercial sandbox to improve onboarding and experimentation.
-    evidence_level: direct
-    contribution_level: senior-contributor-and-mentor
-    sources:
-      - experience/earlier-career.md
-    tags: [mentoring, interviewing, aws, onboarding]
-    limitations: []
-    public_status: approved
-
-  - id: sysmex-regulated-modernization
-    claim: Supported migration and modernization of regulated healthcare-related systems into AWS using .NET and database-migration practices.
-    evidence_level: direct
-    contribution_level: developer-and-analyst
-    sources:
-      - experience/earlier-career.md
-    tags: [healthcare, aws, dotnet, entity-framework, regulated-systems]
-    limitations:
-      - Research into ML tooling is not equivalent to ownership of production machine-learning systems.
-    public_status: approved
-
-  - id: apics-modernization-and-teaching
-    claim: Developed enterprise web and reporting capabilities and taught MVC and Entity Framework modernization concepts to WebForms developers.
-    evidence_level: direct
-    contribution_level: developer-and-internal-educator
-    sources:
-      - experience/earlier-career.md
-    tags: [aspnet-mvc, entity-framework, react, vue, mentoring]
-    limitations: []
-    public_status: approved
+withheld_scopes:
+  - id: associated-global-systems
+    reason: Current public policy forbids provisional claims and the role has not completed Source of Truth review.
+  - id: sysmex-non-xw100
+    reason: Non-XW100 claims remain outside the approved public scope.
+  - id: rockford-deeper-technical-platform
+    reason: Detailed technical architecture remains unreviewed beyond the approved internal-platform connection.

@@ -2,28 +2,35 @@
 
 ## Context
 
-A regional professional orchestra required reliable recurring operations across musician booking, scheduling, attendance, contracting, payroll support, mileage, auditions, reporting, and season management.
+A regional professional orchestra required recurring personnel operations across musician booking, scheduling, attendance, contracting, payroll support, tax-preparation support, replacements, auditions, reporting, and season management.
 
 ## Matthew's contribution
 
-Matthew simultaneously held formal personnel-management responsibility and independently designed, developed, operated, and evolved the internal platform used to support those workflows.
+Matthew simultaneously held formal non-IT personnel-management responsibility and independently designed, developed, and maintained an internal operational platform supporting those workflows.
 
-He:
+Approved public scope includes:
 
-- Managed personnel operations across a roster of more than 1,200 musicians.
-- Supported booking, replacement, scheduling, attendance, contracts, payroll inputs, tax-support records, and personnel decisions.
-- Modeled musician rosters, engagements, contracts, attendance, mileage, auditions, seasons, venues, ensembles, and administrative cycles.
-- Built role-based permissions, configuration, forms, reports, automation, query logic, macros, and third-party integrations.
-- Integrated Outlook, Word, Excel, Dropbox, Acrobat, Google APIs, and .NET Framework libraries.
-- Applied idempotency, reconciliation, proration, compensating corrections, immutable historical-record awareness, and financial-correctness thinking to payroll-sensitive workflows.
-- Maintained long-term ownership, user support, feature development, reliability, and process refinement.
+- Formal personnel responsibility across booking, scheduling, roster coordination, attendance, contracts, payroll support, tax-preparation support, hiring/replacement, and personnel decision support.
+- A roster exceeding 1,200 musicians; this is a roster and personnel-operations scope, not a direct-report count.
+- Independent ownership of an internal platform connected to the approved personnel workflows at the current source-stated depth.
+- Long-term user support, workflow refinement, and coordination among people, process, software, payroll-sensitive, contract-sensitive, and operational needs.
+- Socio-technical systems and leadership evidence that remains explicitly separate from software-engineering people management.
 
-## Technical environment
+## Current technical-detail boundary
 
-VBA, .NET Framework libraries, SQL and query logic, APIs/Web APIs, ETL-style workflows, Microsoft Office applications, Dropbox, Acrobat, Google APIs, XML/registry configuration, forms, reports, and macros.
+The current verified public record does not yet approve the deeper architecture and technology inventory previously associated with this platform.
+
+Until a separate technical-platform Intake is completed, do not publish detailed claims about:
+
+- specific VBA, .NET, API, ETL, database, macro, integration, or configuration implementations;
+- specific reliability or financial-correctness patterns beyond the approved personnel/payroll/contract workflow context;
+- quantified operational results;
+- commercial SaaS positioning.
 
 ## Evidence boundaries
 
-- The platform was an internal operational system rather than a public commercial SaaS product.
-- Payroll-support responsibility does not imply that Matthew served as the organization's accountant or payroll provider.
-- The value of this project is the combination of domain ownership, people operations, workflow design, automation, correctness, and sustained product responsibility.
+- The role was music-sector personnel management, not software-engineering management.
+- The 1,200+ roster was not a direct-report count.
+- Payroll-support responsibility does not imply that Matthew served as accountant or payroll provider.
+- The internal platform was not a public commercial SaaS product.
+- This page intentionally preserves a narrower public scope until deeper technical evidence is separately reviewed.

@@ -1,35 +1,51 @@
 # AI, Analytics, and Data Systems
 
-## AI-assisted enterprise systems
+## Enterprise intake and AI-assisted workflow systems
 
-Matthew has contributed to an enterprise intake platform using AI-assisted analysis and RAG-style knowledge retrieval concepts. His role included architecture, APIs, data models, integrations, workflow reliability, identity, logging, and operational concerns.
+Matthew contributed materially to the APIs, data models, integrations, ingestion patterns, migration strategy, reliability, logging, and operational boundaries of an enterprise intake platform that incorporated AI-assisted analysis and retrieval concepts.
+
+His approved evidence is strongest in the software, data, integration, and operational architecture around AI-assisted workflows. It does not establish ownership of the original foundational stack, the platform's Okta integration, or a production model-training organization.
 
 Source: [AI-Assisted Enterprise Intake Platform](../projects/intake-platform.md)
 
 ## Engineering analytics
 
-Matthew led early architecture and build-versus-buy evaluation for an engineering-intelligence platform aggregating operational metadata across enterprise delivery tools.
+Matthew led architecture and build-versus-buy evaluation for an engineering-intelligence initiative aggregating operational and delivery metadata across enterprise tools.
+
+He built an Express.js backend, defined ingestion/normalization/reporting direction, evaluated DevEx/DORA concepts and data-boundary risks, and directly assessed multiple commercial platforms. Funding reductions stopped procurement; no evaluated product was purchased, piloted, or implemented.
 
 Source: [Engineering Analytics](../projects/engineering-analytics.md)
 
-## Explainable nonprofit intelligence
+## VerifyForGood data implementation and AI design
 
-Matthew designed source-grounded AI-assistance concepts for VerifyForGood, emphasizing explainability, source attribution, confidence boundaries, data ingestion, and analyst support rather than opaque automated approval.
+Matthew has implemented IRS nonprofit-data ingestion, manifests, HTTP metadata checks, archive processing, malformed-data handling, drift detection, incremental reprocessing, APIs, tenant controls, and local portals for VerifyForGood.
+
+Working AI-assisted analysis, RAG, explainability, embeddings, vector search, conversational memory, and graph intelligence remain designed or roadmap capabilities rather than implemented product features.
 
 Source: [VerifyForGood Platform Architecture](../projects/verify-for-good-platform.md)
 
 ## Data-system evidence
 
-Documented data experience includes:
+Documented direct or scoped experience includes:
 
-- PostgreSQL, SQL Server, DynamoDB, DB2, MySQL, SQLite, RDS, Athena, and Redshift research
-- SQLAlchemy, Alembic, Entity Framework, and Prisma
-- API and event-oriented ingestion
+- PostgreSQL, SQL Server, DynamoDB, RDS-context systems, and object-storage-oriented data flows
+- Entity Framework, Prisma, SQL/T-SQL, stored procedures, schema extraction, migration/fallback scripts, mirroring, and replication
+- API-, queue-, worker-, event-, and batch-oriented ingestion
 - Metadata aggregation and normalization
-- Large XML and bulk-data processing concepts
-- Source manifests, HTTP metadata checks, schema-drift detection, malformed-data handling, and incremental reprocessing
-- Reporting, SSRS, SSIS, and ETL-style workflows
+- IRS bulk data and Form 990 XML/index ingestion
+- Source manifests, ETag/Last-Modified checks, archive handling, schema-drift detection, malformed-data handling, and incremental reprocessing
+- SSRS, SSIS, reporting, and ETL-style workflows
+
+Technologies appearing only in research, evaluation, planned architecture, or unreviewed legacy material are not presented as direct implementation evidence.
 
 ## Boundaries
 
-Matthew's strongest AI evidence is systems integration, retrieval-oriented architecture, analytics, explainability, and data-platform design. Research into ML.NET and other ML tooling should not be represented as equivalent to owning production model training or ML research infrastructure.
+Matthew's strongest AI evidence is software and platform architecture around AI-assisted workflows, engineering analytics, source-grounded analysis, data ingestion, and explainability-oriented design.
+
+Do not interpret:
+
+- AI-assisted development as autonomous production ownership;
+- RAG or explainability design as a working deployed feature;
+- ML.NET, ThingWorx Analytics, or related research as production ML implementation;
+- evaluated analytics products as purchased or implemented systems;
+- public-data ingestion as proprietary access to external datasets.
