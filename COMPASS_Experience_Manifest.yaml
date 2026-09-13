@@ -3,19 +3,18 @@ repository_role: public-experience-projection
 
 source:
   id: compass-career-source
-  last_reconciled_commit: aa84526abb7a204615b8c0526515c25fe190c463
+  last_reconciled_commit: e79f76ed3fcc9c991540d63b47db273af3bb8b8a
 
 target:
   repository: mcataloe/matthew-cataldi-experience
   branch: main
-  last_reconciled_commit: 7145e7ce607913a7e6e06120a8046bb7bd2ca542
+  last_reconciled_commit: 1beadbcfbf40ade1434c92417897ed61f6e63138
 
 reconciliation:
-  last_reconciled_at: 2026-07-19
+  last_reconciled_at: 2026-09-13
   last_mode: apply-approved
-  latest_report_path: reconciliation/COMPASS Experience Sync Public Report - 2026-07-19.md
-  framework_version: vNext 2026-07.5
-  framework_revision: 02a2bc939668bdef124485bd8ca502e66e093d7b
+  latest_report_path: reconciliation/COMPASS Experience Sync Public Report - 2026-09-13.md
+  framework_version: vNext 2026-09.2
 
 publication:
   audience: public
@@ -35,7 +34,7 @@ claims:
     - compass-reconciled
 
 artifacts:
-  comprehensive_career_cv_path: career-cv/Matthew Cataldi - General - Comprehensive Career History - 07-2026 - Comprehensive Career CV.md
+  comprehensive_career_cv_path: career-cv/Matthew Cataldi - General - Comprehensive Career History - 09-2026 - Comprehensive Career CV.md
   targeted_resume_replacement: false
   final_docx_released: false
 
@@ -56,4 +55,11 @@ report_history:
     framework_commit: 02a2bc939668bdef124485bd8ca502e66e093d7b
     target_base_commit: 222d060b2e13b54a33af6627a7d78a42ee20235f
     target_content_commit: 7145e7ce607913a7e6e06120a8046bb7bd2ca542
+    final_manifest_commit: self
+  - date: 2026-09-13
+    mode: apply-approved
+    path: reconciliation/COMPASS Experience Sync Public Report - 2026-09-13.md
+    source_commit: e79f76ed3fcc9c991540d63b47db273af3bb8b8a
+    target_base_commit: efa8942e13942bca7c35f65e3f0d6775a897bad0
+    target_content_commit: 1beadbcfbf40ade1434c92417897ed61f6e63138
     final_manifest_commit: self
