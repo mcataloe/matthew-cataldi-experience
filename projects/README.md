@@ -7,5 +7,8 @@ These pages provide deeper evidence than an employer chronology. Each page state
 - [Regulated Cloud Messaging Platform](govcom-messaging.md)
 - [Hybrid-Cloud Interconnection Modernization](equinix-modernization.md)
 - [GitLab and Engineering Platform Modernization](gitlab-platform-modernization.md)
+- [DIN Modernization Proof of Concept](din-modernization.md)
 - [VerifyForGood Platform Architecture](verify-for-good-platform.md)
+- [Sysmex Analyzer Usage Billing / Pay-Per-Sample Initiative](sysmex-analyzer-usage-billing.md)
 - [Personnel Operations Platform](personnel-operations-platform.md)
+- [LEAP Framework](leap-framework.md)
