@@ -10,7 +10,7 @@ It is designed for three uses:
 
 ## Start here
 
-- [Comprehensive Career CV](career-cv/Matthew%20Cataldi%20-%20General%20-%20Comprehensive%20Career%20History%20-%2007-2026%20-%20Comprehensive%20Career%20CV.md)
+- [Comprehensive Career CV](career-cv/Matthew%20Cataldi%20-%20General%20-%20Comprehensive%20Career%20History%20-%2009-2026%20-%20Comprehensive%20Career%20CV.md)
 - [Professional profile](PROFILE.md)
 - [How to query this repository with an AI assistant](ASK_WITH_AI.md)
 - [Professional experience](experience/)
@@ -29,10 +29,10 @@ Matthew's approved public experience centers on:
 - AWS, AWS GovCloud, Azure, and GCP
 - ECS/Fargate, Terraform, GitLab, Docker, and Kubernetes/EKS architecture or advisory work at documented depths
 - Internal developer platforms and engineering tooling
-- Engineering analytics, AI-assisted development, and source-grounded AI/RAG design at documented implementation stages
+- Engineering analytics, AI-assisted development, conversational-AI orchestration, and source-grounded AI system design at documented implementation stages
 - Hybrid-cloud networking and enterprise modernization
 - Compliance-aligned delivery in federal, healthcare, and other regulated environments
-- Cross-functional technical leadership and ambiguous problem decomposition
+- Cross-functional technical leadership, scoped people management, mentoring, and ambiguous problem decomposition
 
 ## Evidence language
 
@@ -46,7 +46,7 @@ This repository distinguishes among contribution levels:
 - **Supported** — contributed meaningfully without claiming primary ownership.
 - **Participated** — was involved in planning, review, or execution but did not own the effort.
 
-Delivery stage also matters. Prototype, proof-of-concept, test/integration, non-production, production, and attributed post-transition outcomes are not interchangeable.
+Delivery stage also matters. Prototype, proof-of-concept, implemented-code, test/integration, non-production, production, and attributed post-transition outcomes are not interchangeable.
 
 ## Repository purpose and limits
 
